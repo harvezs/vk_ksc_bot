@@ -12,8 +12,8 @@
 ## Установка
 Для исходного кода:
 ```bash
-git clone <repo-url>
-cd <project-folder>
+git clone https://github.com/snifibes/vk_ksc_bot
+cd vk_ksc_bot
 pip install -r requirements.txt
 ```
 Для исполняемого файла скачать файл из release.
@@ -80,7 +80,7 @@ MAX_MESSAGE_LENGTH = 4000
 ```bash
 python main.py
 ```
-Для запуска из исполняемого файла необходимо просто запустить файл .exe
+Для запуска из исполняемого файла необходимо запустить файл .exe
 
 Сервер запустится на указанном хосте/порту. Воркер очереди стартует автоматически в отдельном потоке.
 
