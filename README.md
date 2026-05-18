@@ -22,7 +22,7 @@ pip install -r requirements.txt
 
 ```
 [VK]
-ACCESS_TOKEN = token					# ваш токен VK-бота
+ACCESS_TOKEN = token				# Токен бота группы вк
 API_VERSION = 5.199
 
 [HTTP]
@@ -30,10 +30,7 @@ HTTP_HOST = 127.0.0.1
 HTTP_PORT = 12345
 
 [USERS]
-DEFAULT_USERS = { 						# ID пользователей ВК
-	user1_id, 
-	user2_id
-	}	
+DEFAULT_USERS = user1_id, user2_id	# Пользователи для отправки уведомлений
 
 [MESSAGES]
 MAX_MESSAGE_LENGTH = 4000
