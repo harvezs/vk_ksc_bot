@@ -1,11 +1,9 @@
 import requests
 from config import VK_ACCESS_TOKEN, VK_API_VERSION
-from logger import logger
 
 
 def send_vk_message(user_id: int, message_text: str) -> bool:
     if not VK_ACCESS_TOKEN:
-        logger.error("VK_ACCESS_TOKEN не настроен!")
         return False
 
     url = "https://api.vk.com/method/messages.send"
@@ -22,11 +20,9 @@ def send_vk_message(user_id: int, message_text: str) -> bool:
         data = response.json()
 
         if "error" in data:
-            logger.error(f"VK error to {user_id}: {data['error']['error_msg']}")
             return False
 
         return True
 
     except Exception as e:
-        logger.exception(f"Ошибка отправки VK: {e}")
         return False

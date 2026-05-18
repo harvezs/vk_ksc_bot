@@ -4,3 +4,7 @@ Scripts/
 __pycache__
 .venv/
 .idea/
+build/
+dist/
+config.cfg
+vk_parser_bot.spec
